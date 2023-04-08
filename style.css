@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: blue;
+    height: 70%;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: blueviolet;
+    flex: 0 0 19%;
+    height: 250px;
+    margin: 30px;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 80px;
+    transition-duration: 400ms;
+}
+
+.animation {
+    border: 18px solid green;
+}
