@@ -13,6 +13,7 @@ body {
     width: 100%;
     background-color: beige;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -28,7 +29,8 @@ main {
 }
 
 .card {
-    background-color: blueviolet;
+    background-image: url(imgs/BackCard.jpg);
+    background-size: cover;
     flex: 0 0 19%;
     height: 250px;
     margin: 30px;
@@ -36,8 +38,39 @@ main {
     font-size: 80px;
     padding-top: 80px;
     transition-duration: 400ms;
+    cursor: pointer;
+
+    color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCards {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 80px;
 }
 
 .animation {
-    border: 18px solid green;
+    animation: animCard 1s forwards;
+}
+
+@keyframes animCard {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(90deg);
+        border: 3px solid green;
+    }
+    100% {
+        transform: rotateY(180deg);
+        border: 3px solid green;
+    }
+}
+
+button {
+    margin-top: 30px;
 }
