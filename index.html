@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <main>
+    <footer>
+        <h1>Jogo memória</h1>
+        <h2></h2>    
+    </footer>
+    <main>
+        <div>
             <div class="card" onclick="teste(0)">
                 <img class="imgCards"></img>
             </div>
@@ -21,7 +25,10 @@
             </div>
             <div class="card" onclick="teste(3)">
                 <img class="imgCards"></img>
-            </div>
+            </div>   
+        </div>
+            
+        <div>
             <div class="card" onclick="teste(4)">
                 <img class="imgCards"></img>
             </div>
@@ -34,10 +41,10 @@
             <div class="card" onclick="teste(7)">
                 <img class="imgCards"></img>
             </div>
-        </main>
-        <button onclick="randomizar()">RANDOMIZAR</button>
-    </div>
+        </div>
 
+        <button onclick="randomizar()">Reiniciar</button>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
