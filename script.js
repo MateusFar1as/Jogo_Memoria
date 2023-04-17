@@ -10,7 +10,7 @@ let tentativas = 1
 let carta1num = 0
 let carta2num = 0
 let numsSalvos = []
-let ItemCartas = ['/imgs/Thunder.png','/imgs/Thunder.png','/imgs/exodia.png','/imgs/exodia.png','/imgs/background-dragon.png','/imgs/background-dragon.png','/imgs/Slifer.jpg','/imgs/Slifer.jpg']
+let ItemCartas = ['imgs/Thunder.png','imgs/Thunder.png','imgs/exodia.png','imgs/exodia.png','imgs/background-dragon.png','imgs/background-dragon.png','imgs/Slifer.jpg','imgs/Slifer.jpg']
 
 function teste(num) {
     if(!numsSalvos.includes(num) && (!carta2 || !carta2.classList.contains('animation')) ){
@@ -46,8 +46,8 @@ function teste(num) {
         
             if(numsSalvos.length == 8){
                 setTimeout(() => {
-                    alert('teste')
-                    randomizar()   
+                    document.querySelector('.pVitoria').innerHTML = `Parabéns você venceu com ${tentativas - 1} tentativas!!`
+                    document.querySelector('.vitoria').style.display = 'flex' 
                 },1000)
             }
         }
@@ -67,6 +67,7 @@ function randomizar() {
     x = 0
     tentativas = 1
     tentativasQuery.innerHTML = `Número de tentativas: 0`
+    document.querySelector('.vitoria').style.display = 'none'
 }
 
 randomizar()

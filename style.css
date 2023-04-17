@@ -10,6 +10,7 @@ body {
     background-color: rgb(47, 48, 51);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 h1,h2 {
@@ -31,7 +32,6 @@ footer {
 
 main {
     width: 850px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,10 +46,8 @@ main > div {
 .card {
     background-image: url(imgs/BackCard.jpg);
     background-size: cover;
-    /*height: 220px;
-    width: 170px;*/
     height: 100%;
-    width: 20%;
+    width: 100%;
     font-size: 80px;
     margin: 0 10px;
     transition-duration: 400ms;
@@ -57,6 +55,23 @@ main > div {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.vitoria {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.753);
+    top: 28%;
+    height: 400px;
+    width: 380px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vitoria > p {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .imgCards {
@@ -115,5 +130,8 @@ button:hover {
 @media (max-width: 851px){
     main {
         width: 100%;
+    }
+    main > div:nth-of-type(1) {
+        margin-top: 40px;
     }
 }
